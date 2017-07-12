@@ -63,6 +63,12 @@ app.get('/bad', (req, res) => {
     });
 });
 
+app.get('/github', (req, res) => {
+    res.render('github.hbs', {
+        pageTitle: 'Github Page'
+    });
+});
+
 app.listen(port, () => {
     console.log(`Server is up on port ${port}`);
 });
